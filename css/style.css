@@ -371,9 +371,6 @@ ul {
 
 .cards-1,
 .cards-2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 
@@ -381,8 +378,8 @@ ul {
 
 
 .card {
+    margin: 0 auto;
     border: none;
-    margin-right: 54px;
     padding-bottom: 54px;
 }
 
@@ -844,7 +841,7 @@ ul {
     }
 
 
-    .header__title {link__column
+    .header__title {
         font-size: 60px;
         line-height: 35px;
     }
@@ -938,13 +935,10 @@ ul {
         column-gap: 14px;
     }
 
-    .cards-1,
-    .cards-2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .cards{
+        margin-left: 250px;
     }
+
 
     .zara-section__text {
         width: 404px;
@@ -974,6 +968,17 @@ ul {
         font-size: 12px;
 
     }
-    
+}
 
+
+@media(max-width:400px){
+    .zara-section-wrapper {
+        margin-left: 20px;
+        margin-top: 133px;
+
+    }
+
+    .zara-section__text {
+        width: 304px;
+    }
 }
