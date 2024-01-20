@@ -46,20 +46,9 @@ ul {
 
 }
 
-/* .header__navbar::before {
-    content: '';
-
-    position: absolute;
-    top: 10%;
-
-    width: 91%;
-    height: 2px;
-    background-color: #E3E3E3;
-
-} */
 
 
-.navbar-nav{
+.navbar-nav {
     display: flex;
     flex-direction: row;
     column-gap: 20px;
@@ -74,9 +63,6 @@ ul {
 
 
 .logo {
-    /* margin-left: 500px;
-    margin-right: 350px; */
-
     height: 34px;
     width: 180px;
 }
@@ -285,7 +271,6 @@ ul {
 
 
 .category__image-1 {
-    /* display: block; */
     max-width: 648px;
     max-height: 648px;
 
@@ -366,17 +351,6 @@ ul {
 }
 
 /*CARDS*/
-
-
-
-.cards-1,
-.cards-2 {
-}
-
-
-
-
-
 .card {
     margin: 0 auto;
     border: none;
@@ -453,7 +427,6 @@ ul {
 
 .zara-section {
     background-image: url(./../img/brand-banner.png);
-    /* background-color: #f3f4f4;  */
     height: 776px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -529,7 +502,6 @@ ul {
 .input {
     width: 550px;
 
-    /* padding-right: 512px; */
 
     background: transparent;
     border-top: none;
@@ -630,7 +602,6 @@ ul {
     margin-top: 95px;
 
     background-color: #1E2832;
-    /* height: 52px; */
 }
 
 
@@ -654,13 +625,6 @@ ul {
     color: #FFFFFF;
 }
 
-/* .footer__container{
-    display: flex;
-    column-gap: 60px;
-    row-gap: 60px;
-}
- */
-
 
 
 
@@ -668,9 +632,10 @@ ul {
 @media(max-width:1300px) {
 
 
-    /* .header__navbar::before {
-        width: 98%;
-    } */
+
+    .zara-section-wrapper {
+        margin-left: 650px;
+    }
 
 }
 
@@ -678,10 +643,10 @@ ul {
 .header__top-container {
     display: flex;
     align-items: center;
-    /* Вирівнювання по вертикалі */
     justify-content: space-between;
-    /* Рівномірний розподіл елементів по горизонталі */
 }
+
+
 
 
 
@@ -690,16 +655,12 @@ ul {
 @media (max-width:1600px) {
     .header {
         background-image: url(./../img/header--background.jpg);
-        /* background-color: #f3f4f4;  */
         height: 847px;
         background-repeat: no-repeat;
         background-size: cover;
     }
 
-    /* .header__navbar::before {
-        top: 17%;
-        width: 84.11%;
-    } */
+
 }
 
 
@@ -710,10 +671,7 @@ ul {
         height: 847px;
     }
 
-    /* .header__navbar::before {
-        top: 17%;
-        width: 98%;
-    } */
+
 
     .category__image-1 {
         max-width: 600px;
@@ -758,22 +716,33 @@ ul {
         padding-top: 50px;
     }
 
-    .footer__text{
+    .footer__text {
         width: 250px;
     }
 
 
 }
 
+@media(max-width:1100px) {
+    .zara-section {
+        background-image: url(./../img/brand-banner__for__mobile.png);
+        height: 776px;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        margin-top: 145px;
+
+    }
+
+    .zara-section-wrapper {
+        margin-left: 250px;
+        margin-top: 233px;
+
+    }
+}
+
 
 @media(max-width:992px) {
-
-    /* .header__navbar::before {
-        top: 15%;
-        width: 98%;
-    } */
-
-
     .category__inner {
         flex-direction: column;
         justify-content: center;
@@ -793,25 +762,10 @@ ul {
 
 
 
-    .zara-section {
-        background-image: url(./../img/brand-banner__for__mobile.png);
-        /* background-color: #f3f4f4;  */
-        height: 776px;
-        background-repeat: no-repeat;
-        background-size: cover;
-    
-        margin-top: 145px;
-    
-    }
 
-    .zara-section-wrapper {
-        margin-left: 250px;
-        margin-top: 233px;
-    
-    }
 
-    
-    .footer__text{
+
+    .footer__text {
         width: 200px;
     }
 
@@ -820,12 +774,6 @@ ul {
 
 
 @media(max-width:768px) {
-    /* 
-    .header__navbar::before {
-        top: 13%;
-        width: 97%;
-    } */
-
     .header__top-inner {
         column-gap: 15px;
     }
@@ -861,12 +809,17 @@ ul {
     .zara-section-wrapper {
         margin-left: 50px;
         margin-top: 233px;
-    
+
     }
 
 
     .link__column {
         row-gap: 10px;
+    }
+
+    .footer-row{
+        max-width: 500px;
+        margin: 0 auto;
     }
 
 
@@ -935,13 +888,13 @@ ul {
         column-gap: 14px;
     }
 
-    .cards{
+    .cards {
         margin-left: 250px;
     }
 
 
     .zara-section__text {
-        width: 404px;
+        width: 304px;
     }
 
     .input {
@@ -949,7 +902,7 @@ ul {
         font-size: 16px;
         font-weight: 600;
         line-height: 18.75px;
-    
+
     }
 
     .copy {
@@ -967,18 +920,19 @@ ul {
 
         font-size: 12px;
 
+    }   
+    .footer-row{
+        max-width: min-content;
     }
 }
 
 
-@media(max-width:400px){
+@media(max-width:400px) {
     .zara-section-wrapper {
         margin-left: 20px;
         margin-top: 133px;
 
     }
 
-    .zara-section__text {
-        width: 304px;
-    }
+
 }
